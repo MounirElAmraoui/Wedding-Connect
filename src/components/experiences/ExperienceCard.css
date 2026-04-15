@@ -1,0 +1,169 @@
+@import url('../../styles/variables.css');
+
+.experience-card {
+  background: var(--primary-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.exp-image-wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.exp-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.experience-card:hover .exp-image {
+  transform: scale(1.05);
+}
+
+.exp-category {
+  position: absolute;
+  top: var(--spacer-md);
+  left: var(--spacer-md);
+  padding: var(--spacer-xs) var(--spacer-sm);
+  background: rgba(26, 26, 26, 0.8);
+  color: white;
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  border-radius: var(--radius-sm);
+  z-index: 2;
+}
+
+.exp-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.experience-card:hover .exp-overlay {
+  opacity: 1;
+}
+
+.exp-join-btn {
+  padding: var(--spacer-sm) var(--spacer-lg);
+  background: var(--primary-gold);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-primary);
+  font-weight: var(--font-semibold);
+  cursor: pointer;
+  transform: translateY(20px);
+  transition: all var(--transition-base);
+}
+
+.experience-card:hover .exp-join-btn {
+  transform: translateY(0);
+}
+
+.exp-content {
+  padding: var(--spacer-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacer-sm);
+}
+
+.exp-description {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  margin-bottom: var(--spacer-md);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.exp-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacer-sm);
+  margin-bottom: var(--spacer-lg);
+}
+
+.exp-meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-sm);
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+}
+
+.exp-meta-item svg {
+  color: var(--primary-gold);
+}
+
+.exp-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: var(--spacer-md);
+  border-top: 1px solid var(--border-light);
+}
+
+.exp-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.price-value {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  color: var(--primary-gold);
+}
+
+.exp-details-btn {
+  padding: var(--spacer-sm) var(--spacer-md);
+  background: transparent;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  font-family: var(--font-primary);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.exp-details-btn:hover {
+  border-color: var(--primary-gold);
+  color: var(--primary-gold);
+}

@@ -1,0 +1,35 @@
+@import url('../../styles/variables.css');
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-xs);
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  color: var(--border-medium);
+}
+
+.star.filled {
+  color: var(--primary-gold);
+}
+
+.star.half {
+  color: var(--primary-gold);
+  opacity: 0.6;
+}
+
+.rating-value {
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+}
+
+.rating-reviews {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}

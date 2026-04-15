@@ -1,0 +1,59 @@
+@import url('../../styles/variables.css');
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacer-xs);
+}
+
+.input-label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacer-xs);
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--primary-white);
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--spacer-sm) var(--spacer-md);
+  transition: all var(--transition-base);
+}
+
+.input-container:focus-within {
+  border-color: var(--primary-gold);
+  box-shadow: var(--shadow-gold);
+}
+
+.input-container.error {
+  border-color: #e74c3c;
+}
+
+.input-icon {
+  color: var(--text-muted);
+  margin-right: var(--spacer-sm);
+}
+
+.input-field {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: var(--text-muted);
+}
+
+.input-error {
+  font-size: var(--text-xs);
+  color: #e74c3c;
+  margin-top: var(--spacer-xs);
+}

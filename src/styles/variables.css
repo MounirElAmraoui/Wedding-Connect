@@ -1,0 +1,63 @@
+:root {
+  --primary-gold: #D4AF37;
+  --primary-gold-hover: #B8960C;
+  --primary-black: #1A1A1A;
+  --primary-white: #FFFFFF;
+  
+  --bg-cream: #FAF9F6;
+  --bg-beige: #F5F1E8;
+  --bg-light: #FEFDFB;
+  
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B6B6B;
+  --text-muted: #8B8680;
+  
+  --accent-gold: #D4AF37;
+  --accent-gold-light: rgba(212, 175, 55, 0.1);
+  
+  --border-light: #E8E4E1;
+  --border-medium: #D4D4D4;
+  
+  --spacer-xs: 4px;
+  --spacer-sm: 8px;
+  --spacer-md: 16px;
+  --spacer-lg: 24px;
+  --spacer-xl: 32px;
+  --spacer-2xl: 48px;
+  --spacer-3xl: 64px;
+  
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-primary: 'Inter', system-ui, sans-serif;
+  --font-display: 'Urbanist', system-ui, sans-serif;
+  
+  --shadow-sm: 0 1px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-gold: 0 0 0 1px rgba(212, 175, 55, 0.15);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-elevated: 0 12px 40px rgba(0, 0, 0, 0.15);
+  
+  --radius-sm: 8px;
+  --radius-full: 9999px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 300;
+  --z-tooltip: 400;
+}

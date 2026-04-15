@@ -1,0 +1,107 @@
+import React, { useState } from 'react';
+import { Mail, Lock, Eye, EyeOff, ArrowRight, Heart } from 'lucide-react';
+import './Login.css';
+
+const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
+  const [formData, setFormData] = useState({ email: '', password: '' });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle login logic
+  };
+
+  return (
+    <div className="auth-page">
+      <div className="auth-container">
+        <div className="auth-image">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800" alt="Wedding" />
+          <div className="auth-overlay">
+            <div className="auth-quote">
+              <Heart size={32} className="quote-icon" />
+              <h2>"Love is the greatest adventure"</h2>
+              <p>Join us in creating unforgettable moments</p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="auth-form-container">
+          <div className="auth-header">
+            <h1>Welcome Back</h1>
+            <p>Sign in to continue your wedding journey</p>
+          </div>
+          
+          <form className="auth-form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label>Email Address</label>
+              <div className="input-wrapper">
+                <Mail size={18} className="input-icon" />
+                <input 
+                  type="email" 
+                  placeholder="Enter your email"
+                  value={formData.email}
+                  onChange={(e) => setFormData({...formData, email: e.target.value})}
+                  required
+                />
+              </div>
+            </div>
+            
+            <div className="form-group">
+              <label>Password</label>
+              <div className="input-wrapper">
+                <Lock size={18} className="input-icon" />
+                <input 
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Enter your password"
+                  value={formData.password}
+                  onChange={(e) => setFormData({...formData, password: e.target.value})}
+                  required
+                />
+                <button 
+                  type="button" 
+                  className="toggle-password"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                </button>
+              </div>
+            </div>
+            
+            <div className="form-options">
+              <label className="remember-me">
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </label>
+              <a href="#" className="forgot-password">Forgot password?</a>
+            </div>
+            
+            <button type="submit" className="auth-btn">
+              Sign In <ArrowRight size={18} />
+            </button>
+          </form>
+          
+          <div className="auth-divider">
+            <span>Or continue with</span>
+          </div>
+          
+          <div className="social-auth">
+            <button className="social-btn google">
+              <img src="https://www.google.com/favicon.ico" alt="Google" />
+              Google
+            </button>
+            <button className="social-btn facebook">
+              <img src="https://www.facebook.com/favicon.ico" alt="Facebook" />
+              Facebook
+            </button>
+          </div>
+          
+          <p className="auth-footer">
+            Don't have an account? <a href="/register">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Login;

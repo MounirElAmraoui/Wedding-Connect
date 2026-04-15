@@ -1,0 +1,116 @@
+@import url('../../styles/variables.css');
+
+.searchbar {
+  background: var(--primary-white);
+  border-radius: var(--radius-xl);
+  padding: var(--spacer-sm);
+  box-shadow: var(--shadow-elevated);
+}
+
+.searchbar.hero {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-sm);
+}
+
+.search-field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: var(--spacer-sm) var(--spacer-md);
+  background: var(--bg-cream);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.search-field:focus-within {
+  background: var(--primary-white);
+  border-color: var(--primary-gold);
+}
+
+.field-icon {
+  color: var(--text-muted);
+  margin-right: var(--spacer-sm);
+}
+
+.search-input,
+.search-select {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-divider {
+  width: 1px;
+  height: 24px;
+  background: var(--border-light);
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-sm);
+  padding: var(--spacer-md) var(--spacer-xl);
+  background: linear-gradient(135deg, var(--primary-gold) 0%, var(--primary-gold-hover) 100%);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-primary);
+  font-weight: var(--font-semibold);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.searchbar.compact {
+  padding: var(--spacer-xs);
+  border-radius: var(--radius-full);
+}
+
+.searchbar.compact .searchbar-container {
+  flex-wrap: nowrap;
+}
+
+.searchbar.compact .search-field {
+  padding: var(--spacer-xs) var(--spacer-md);
+}
+
+.searchbar.compact .search-btn {
+  padding: var(--spacer-sm) var(--spacer-lg);
+}
+
+@media (max-width: 768px) {
+  .searchbar-container {
+    flex-direction: column;
+  }
+  
+  .search-divider {
+    width: 100%;
+    height: 1px;
+  }
+  
+  .search-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

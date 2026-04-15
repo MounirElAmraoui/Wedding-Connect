@@ -1,0 +1,56 @@
+@import url('../../styles/variables.css');
+
+.vendor-grid {
+  flex: 1;
+}
+
+.grid-header {
+  margin-bottom: var(--spacer-xl);
+}
+
+.grid-header h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacer-sm);
+}
+
+.grid-header p {
+  color: var(--text-muted);
+  font-size: var(--text-lg);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacer-xl);
+}
+
+.grid-footer {
+  text-align: center;
+  margin-top: var(--spacer-2xl);
+}
+
+.load-more-btn {
+  padding: var(--spacer-md) var(--spacer-2xl);
+  background: transparent;
+  border: 2px solid var(--primary-gold);
+  color: var(--primary-gold);
+  border-radius: var(--radius-md);
+  font-family: var(--font-primary);
+  font-weight: var(--font-semibold);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.load-more-btn:hover {
+  background: var(--primary-gold);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

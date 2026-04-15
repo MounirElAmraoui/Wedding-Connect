@@ -1,0 +1,139 @@
+@import url('../../styles/variables.css');
+
+.filters-sidebar {
+  background: var(--primary-white);
+  border-right: 1px solid var(--border-light);
+  padding: var(--spacer-lg);
+  width: 280px;
+  height: fit-content;
+  position: sticky;
+  top: 90px;
+}
+
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacer-lg);
+  padding-bottom: var(--spacer-md);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.filters-header h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+}
+
+.clear-btn {
+  padding: var(--spacer-xs) var(--spacer-sm);
+  background: transparent;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.clear-btn:hover {
+  border-color: var(--primary-gold);
+  color: var(--primary-gold);
+}
+
+.filter-section {
+  margin-bottom: var(--spacer-xl);
+}
+
+.filter-section h4 {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacer-md);
+}
+
+.price-range {
+  margin-bottom: var(--spacer-md);
+}
+
+.range-slider {
+  width: 100%;
+  margin-bottom: var(--spacer-sm);
+}
+
+.price-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.filter-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacer-sm);
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-sm);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-sm);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.checkbox-label:hover {
+  color: var(--text-primary);
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-gold);
+  cursor: pointer;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 2px;
+  margin-right: var(--spacer-sm);
+}
+
+.rating-stars .star {
+  color: var(--primary-gold);
+}
+
+.location-search {
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-sm);
+  padding: var(--spacer-sm);
+  background: var(--bg-cream);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+}
+
+.location-search input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-primary);
+  font-size: var(--text-sm);
+}
+
+@media (max-width: 968px) {
+  .filters-sidebar {
+    display: none;
+  }
+}

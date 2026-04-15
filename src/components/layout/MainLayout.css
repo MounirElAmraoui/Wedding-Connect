@@ -1,0 +1,24 @@
+@import url('../../styles/variables.css');
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 0;
+  padding-top: 70px;
+  transition: margin-left var(--transition-base);
+}
+
+.main-content.sidebar-open {
+  margin-left: 280px;
+}
+
+@media (max-width: 968px) {
+  .main-content.sidebar-open {
+    margin-left: 0;
+  }
+}
