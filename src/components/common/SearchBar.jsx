@@ -43,7 +43,7 @@ const SearchBar = ({ variant = 'hero' }) => {
         
         <button className="search-btn">
           <Search size={20} />
-          <span>Search</span>
+          <span id='search-bar'>Search</span>
         </button>
       </div>
     </div>

@@ -6,8 +6,9 @@ const Sidebar = ({ isOpen, onClose }) => {
     { label: 'Home', href: '/' },
     { label: 'Vendors', href: '/vendors' },
     { label: 'Experiences', href: '/experiences' },
-    { label: 'Destinations', href: '#' },
-    { label: 'Favorites', href: '#' },
+    { label : 'dashboard' ,href : '/dashboard'},
+    { label: 'Destinations', href: '/' },
+    { label: 'Favorites', href: '/' },
   ];
 
   const vendorCategories = [
@@ -61,13 +62,13 @@ const Sidebar = ({ isOpen, onClose }) => {
             <button className="sidebar-btn">
               Become a Vendor
             </button>
-            <div className="user-section">
+            <a className="user-section">
               <div className="user-avatar">G</div>
               <div className="user-info">
                 <span className="user-name">Guest User</span>
                 <span className="user-role">Sign in to book</span>
               </div>
-            </div>
+            </a>
           </div>
         </nav>
       </aside>

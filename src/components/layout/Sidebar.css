@@ -145,12 +145,16 @@
   padding: var(--spacer-xs) var(--spacer-lg);
 }
 
+
 .sidebar-footer {
   position: sticky;
   bottom: 0;
   padding: var(--spacer-lg);
   background: var(--primary-white);
   border-top: 1px solid var(--border-light);
+}
+.sidebar-footer{
+  margin-top: 300px;
 }
 
 .sidebar-btn {

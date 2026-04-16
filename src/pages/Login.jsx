@@ -35,7 +35,6 @@ const Login = () => {
             <div className="form-group">
               <label>Email Address</label>
               <div className="input-wrapper">
-                <Mail size={18} className="input-icon" />
                 <input 
                   type="email" 
                   placeholder="Enter your email"
@@ -49,7 +48,6 @@ const Login = () => {
             <div className="form-group">
               <label>Password</label>
               <div className="input-wrapper">
-                <Lock size={18} className="input-icon" />
                 <input 
                   type={showPassword ? "text" : "password"}
                   placeholder="Enter your password"

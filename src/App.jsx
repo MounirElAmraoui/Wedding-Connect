@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import './styles/global.css';
+import Profil from './pages/Profil';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="vendors/:id" element={<VendorDetails />} />
           <Route path="experiences" element={<Experiences />} />
           <Route path="dashboard" element={<Dashboard />} />
+          <Route path="profil" element={<Profil />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

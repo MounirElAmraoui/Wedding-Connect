@@ -132,8 +132,8 @@ const Home = () => {
             {stats.map((stat, index) => (
               <div key={index} className="stat-item">
                 <stat.icon size={24} className="stat-icon" />
-                <div className="stat-value">{stat.value}</div>
-                <div className="stat-label">{stat.label}</div>
+                <div style={{ color:'red' }} className="stat-value">{stat.value}</div>
+                <div style={{ color: 'gray' }} className="stat-label">{stat.label}</div>
               </div>
             ))}
           </div>

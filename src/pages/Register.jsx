@@ -25,7 +25,7 @@ const Register = () => {
           <div className="auth-overlay">
             <div className="auth-quote">
               <Heart size={32} className="quote-icon" />
-              <h2>"Begin your forever today"</h2>
+              <h2 style={{color:'#fff'}}>"Begin your forever today"</h2>
               <p>Create memories that will last a lifetime</p>
             </div>
           </div>
@@ -83,7 +83,6 @@ const Register = () => {
             <div className="form-group">
               <label>Email Address</label>
               <div className="input-wrapper">
-                <Mail size={18} className="input-icon" />
                 <input 
                   type="email" 
                   placeholder="Enter your email"
@@ -97,7 +96,6 @@ const Register = () => {
             <div className="form-group">
               <label>Password</label>
               <div className="input-wrapper">
-                <Lock size={18} className="input-icon" />
                 <input 
                   type={showPassword ? "text" : "password"}
                   placeholder="Create a password"
