@@ -72,7 +72,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 
   // 👤 ACCOUNT
   const userCard = [
-    { label: "Profile", href: "/profile", icon: <User size={16} /> },
+    { label: "Profile", href: "/profil", icon: <User size={16} /> },
     { label: "Settings", href: "/settings", icon: <Settings size={16} /> },
     { label: "Logout", href: "/logout", icon: <LogOut size={16} /> },
     { label: "Delete Account", href: "/delete-account", icon: <Trash2 size={16} /> },
@@ -97,7 +97,7 @@ const Sidebar = ({ isOpen, onClose }) => {
         <nav className="sidebar-nav">
 
           {/* USER PROFILE */}
-          <Link className="user-section" to="/profile">
+          <Link className="user-section" to="/profil" onClick={onClose}>
             <img
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400"
               alt="User Avatar"
@@ -113,7 +113,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           <div className="nav-section">
             <span className="section-label">MAIN</span>
             {mainMenu.map((item, i) => (
-              <Link key={i} to={item.href} className="nav-link">
+              <Link key={i} to={item.href} className="nav-link" onClick={onClose}>
                 {item.icon}
                 <span>{item.label}</span>
               </Link>
@@ -124,7 +124,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           <div className="nav-section">
             <span className="section-label">USER</span>
             {userMenu.map((item, i) => (
-              <Link key={i} to={item.href} className="nav-link">
+              <Link key={i} to={item.href} className="nav-link" onClick={onClose}>
                 {item.icon}
                 <span>{item.label}</span>
               </Link>
@@ -135,7 +135,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           <div className="nav-section">
             <span className="section-label">DISCOVER</span>
             {discoverMenu.map((item, i) => (
-              <Link key={i} to={item.href} className="nav-link">
+              <Link key={i} to={item.href} className="nav-link" onClick={onClose}>
                 {item.icon}
                 <span>{item.label}</span>
               </Link>
@@ -156,7 +156,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           {/* ACTION BUTTONS */}
           <div className="nav-section actions">
             {actionButtons.map((btn, i) => (
-              <Link className="nav-link" key={i} to={btn.href}>
+              <Link className="nav-link" key={i} to={btn.href} onClick={onClose}>
                 {btn.icon}
                 <span>{btn.label}</span>
               </Link>
@@ -167,7 +167,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           <div className="nav-section">
             <span className="section-label">ACCOUNT</span>
             {userCard.map((item, i) => (
-              <Link key={i} to={item.href} className="nav-link">
+              <Link key={i} to={item.href} className="nav-link" onClick={onClose}>
                 {item.icon}
                 <span>{item.label}</span>
               </Link>
