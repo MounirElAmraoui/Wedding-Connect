@@ -10,6 +10,7 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import './styles/global.css';
 import Profil from './pages/Profil';
+import './App.css';  
 
 function App() {
   return (

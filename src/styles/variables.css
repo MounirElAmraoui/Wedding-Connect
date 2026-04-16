@@ -61,3 +61,6 @@
   --z-modal: 300;
   --z-tooltip: 400;
 }
+*{
+  border-radius: 0;
+}

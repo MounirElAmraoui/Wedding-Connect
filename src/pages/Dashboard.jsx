@@ -154,15 +154,15 @@ const Dashboard = () => {
   return (
     <div className="dashboard-page">
       <div className="dashboard-sidebar">
-        <div className="user-profile">
+        <a className="user-profile" href="/Profil">  
           <div className="avatar">
-            <User size={32} />
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="John Doe" />
           </div>
           <div className="user-info">
             <h3>John Doe</h3>
             <span>{isVendor ? 'Vendor' : 'Couple'}</span>
           </div>
-        </div>
+        </a>
         
         <nav className="dashboard-nav">
           <button 

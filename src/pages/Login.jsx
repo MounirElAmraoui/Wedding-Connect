@@ -19,7 +19,7 @@ const Login = () => {
           <div className="auth-overlay">
             <div className="auth-quote">
               <Heart size={32} className="quote-icon" />
-              <h2>"Love is the greatest adventure"</h2>
+              <h2 style={{color: 'red'}}>"Love is the greatest adventure"</h2>
               <p>Join us in creating unforgettable moments</p>
             </div>
           </div>
