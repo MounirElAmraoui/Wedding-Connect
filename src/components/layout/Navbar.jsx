@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
-import { Home, Users, Calendar, LayoutDashboard, Compass } from 'lucide-react';
 
 const Navbar = ({ onMenuToggle, isSidebarOpen }) => {
   const activeClass = ({ isActive }) => (isActive ? 'nav-link active' : 'nav-link');
@@ -19,25 +18,17 @@ const Navbar = ({ onMenuToggle, isSidebarOpen }) => {
         </NavLink>
 
         <nav className="navbar-nav">
-          <NavLink to="/" className={activeClass} end title="Home">
-            <Home size={20} />
-            <span className="nav-label">Home</span>
+          <NavLink to="/" className={activeClass} end>
+            Home
           </NavLink>
-          <NavLink to="/explore" className={activeClass} title="Explore">
-            <Compass size={20} />
-            <span className="nav-label">Explore</span>
+          <NavLink to="/vendors" className={activeClass}>
+            Vendors
           </NavLink>
-          <NavLink to="/vendors" className={activeClass} title="Vendors">
-            <Users size={20} />
-            <span className="nav-label">Vendors</span>
+          <NavLink to="/experiences" className={activeClass}>
+            Experiences
           </NavLink>
-          <NavLink to="/experiences" className={activeClass} title="Experiences">
-            <Calendar size={20} />
-            <span className="nav-label">Experiences</span>
-          </NavLink>
-          <NavLink to="/dashboard" className={activeClass} title="Dashboard">
-            <LayoutDashboard size={20} />
-            <span className="nav-label">Dashboard</span>
+          <NavLink to="/dashboard" className={activeClass}>
+            Dashboard
           </NavLink>
         </nav>
 

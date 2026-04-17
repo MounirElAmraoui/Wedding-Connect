@@ -237,16 +237,14 @@
 @media (max-width: 480px) {
   .navbar {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
-    top: auto;
     height: 60px;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    border-top: 1px solid var(--border-light);
-    border-bottom: none;
-    box-shadow: var(--shadow-lg);
+    border-bottom: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
   }
 
   .navbar-container {
@@ -279,38 +277,10 @@
   }
   
   .navbar-nav {
-    display: flex;
-    gap: var(--spacer-md);
-    align-items: center;
-    margin-left: 0;
-    flex: 1;
-    justify-content: center;
+    display: none;
   }
   
   .nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-size: 20px;
-    padding: var(--spacer-sm);
-    transition: all var(--transition-fast);
-    border-radius: var(--radius-md);
-    gap: 0;
-  }
-  
-  .nav-link:hover {
-    color: var(--primary-gold);
-    transform: scale(1.1);
-  }
-  
-  .nav-link.active {
-    color: var(--primary-gold);
-    transform: scale(1.1);
-  }
-  
-  .nav-link.active::after {
     display: none;
   }
   
