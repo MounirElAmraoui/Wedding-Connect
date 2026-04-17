@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { User, Mail, Lock, Eye, EyeOff, ArrowRight, Check, Heart } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { User, Mail, Lock, Eye, EyeOff, ArrowRight, Check, Heart, LogOut } from 'lucide-react';
 import './Register.css';
 
 const Register = () => {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [accountType, setAccountType] = useState('couple');
+  const [isRegistered, setIsRegistered] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -14,8 +17,31 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle registration logic
+    setIsRegistered(true);
   };
+
+  const handleLogout = () => {
+    setIsRegistered(false);
+    setFormData({ firstName: '', lastName: '', email: '', password: '' });
+    navigate('/');
+  };
+
+  if (isRegistered) {
+    return (
+      <div className="auth-page">
+        <div className="auth-container">
+          <div className="logged-in-message">
+            <h2>Welcome to WeddingConnect!</h2>
+            <p>Your account has been created successfully.</p>
+            <button className="logout-btn" onClick={handleLogout}>
+              <LogOut size={18} />
+              Logout & Return to Home
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="auth-page">

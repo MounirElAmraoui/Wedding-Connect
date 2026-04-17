@@ -1,15 +1,41 @@
 import React, { useState } from 'react';
-import { Mail, Lock, Eye, EyeOff, ArrowRight, Heart } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Mail, Lock, Eye, EyeOff, ArrowRight, Heart, LogOut } from 'lucide-react';
 import './Login.css';
 
 const Login = () => {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ email: '', password: '' });
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic
+    setIsLoggedIn(true);
   };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    setFormData({ email: '', password: '' });
+    navigate('/');
+  };
+
+  if (isLoggedIn) {
+    return (
+      <div className="auth-page">
+        <div className="auth-container">
+          <div className="logged-in-message">
+            <h2>Welcome!</h2>
+            <p>You are successfully logged in.</p>
+            <button className="logout-btn" onClick={handleLogout}>
+              <LogOut size={18} />
+              Logout & Return to Home
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="auth-page">

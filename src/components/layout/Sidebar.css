@@ -164,9 +164,6 @@
   background: var(--primary-white);
   border-top: 1px solid var(--border-light);
 }
-.sidebar-footer{
-  margin-top: 300px;
-}
 
 .sidebar-btn {
   width: 100%;
