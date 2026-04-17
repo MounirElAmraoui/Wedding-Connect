@@ -1,91 +1,84 @@
 # Plateforme de Voyages et Expériences
 
-Une application web moderne construite avec **React** et **Vite** pour découvrir, réserver et partager des expériences de voyage exceptionnelles.
+Application web moderne pour découvrir, réserver et partager des expériences de voyage avec React + Vite.
 
-## 🎯 À propos du projet
+## 📋 Fonctionnalités
 
-Cette plateforme permet aux utilisateurs de :
-- **Explorer** des destinations et expériences touristiques
-- **Découvrir** des vendeurs (tour-opérateurs, guides, hôtels)
-- **Réserver** des expériences et services
-- **Devenir vendeur** et proposer vos services
-- **Gérer** ses réservations et profil
+| Fonctionnalité | Description |
+|---|---|
+| 🗺️ Exploration | Découvrir destinations et expériences |
+| 👥 Vendeurs | Connectez-vous avec fournisseurs |
+| 📋 Réservations | Gérez vos réservations |
+| ❤️ Favoris | Enregistrez préférées |
+| 💬 Messagerie | Communiquez avec vendeurs |
+| ⭐ Évaluations | Consultez les avis |
+| 🏪 Dashboard | Gestion pour vendeurs |
 
-## 🚀 Caractéristiques principales
+---
 
-### Pour les utilisateurs
-- 🗺️ Exploration des destinations populaires et tendances
-- ⭐ Système de notation et d'avis
-- 💬 Messagerie avec les vendeurs
-- ❤️ Favoris et listes de souhaits
-- 📋 Gestion des réservations
-- 👥 Profil utilisateur personnalisé
-- ⚙️ Paramètres et gestion du compte
+## 📱 Pages
 
-### Pour les vendeurs
-- 🏪 Tableau de bord vendor
-- 📝 Création d'événements et d'expériences
-- 📊 Gestion des reservations
-- 💼 Profil professionnel
+| Page | URL | Type |
+|---|---|---|
+| Accueil | / | Public |
+| Explorer | /explore | Public |
+| Expériences | /experiences | Public |
+| Vendeurs | /vendors | Public |
+| Top Vendeurs | /top-vendors | Public |
+| Tendances | /trending | Public |
+| Destinations | /destinations | Public |
+| Favoris | /favorites | User |
+| Réservations | /bookings | User |
+| Messages | /messages | User |
+| Dashboard | /dashboard | User |
+| Créer Event | /create-event | Vendor |
+| Profil | /profil | User |
+| Paramètres | /settings | User |
+| Devenir Vendeur | /become-vendor | Public |
+| Login | /login | Public |
+| Register | /register | Public |
+| Logout | /logout | Public |
+| Supprimer Compte | /delete-account | User |
 
-## 📱 Structure du projet
+---
 
-```
-src/
-├── components/
-│   ├── common/          # Composants réutilisables (Rating, SearchBar)
-│   ├── layout/          # Mise en page (Navbar, Sidebar, Footer)
-│   ├── ui/              # Composants UI (Button, Card, Input, Modal)
-│   ├── experiences/     # Composants d'expériences
-│   └── vendors/         # Composants pour les vendeurs
-├── pages/               # Pages de l'application
-├── assets/              # Images et ressources
-├── styles/              # Styles globaux
-├── App.jsx              # Composant principal
-└── main.jsx             # Point d'entrée
-```
+## 🛠️ Technologies
 
-## 🛠️ Technologies utilisées
+| Tech | Version |
+|---|---|
+| React | 18+ |
+| Vite | Latest |
+| CSS3 | Standard |
+| ESLint | Latest |
+| Node.js | 16+ |
+| npm | 7+ |
 
-- **Frontend Framework** : React 18+
-- **Build Tool** : Vite
-- **Styling** : CSS moderne
-- **Linter** : ESLint
+---
 
-## 📦 Installation
+## 📂 Structure
 
-1. Clonez le repository :
-```bash
-git clone <repository-url>
-cd vite-project
-```
+| Dossier | Contenu |
+|---|---|
+| `src/pages/` | 19 pages |
+| `src/components/ui/` | Composants UI |
+| `src/components/layout/` | Layout |
+| `src/components/common/` | Partagés |
+| `src/components/vendors/` | Vendeurs |
+| `src/components/experiences/` | Expériences |
+| `src/styles/` | CSS global |
+| `src/assets/` | Images |
 
-2. Installez les dépendances :
-```bash
-npm install
-```
+---
 
-## 🏃 Utilisation
+## ⚙️ Commands
 
-### Mode développement
-```bash
-npm run dev
-```
-
-### Build pour la production
-```bash
-npm run build
-```
-
-### Aperçu de la build
-```bash
-npm run preview
-```
-
-### Linting
-```bash
-npm run lint
-```
+| Commande | Description |
+|---|---|
+| `npm install` | Installer dépendances |
+| `npm run dev` | Serveur dev |
+| `npm run build` | Build prod |
+| `npm run preview` | Aperçu |
+| `npm run lint` | Lint code |
 
 ## 📄 Pages disponibles
 
