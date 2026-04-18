@@ -249,15 +249,7 @@
   }
 }
 
-@media (max-width: 480px) {
-  .sidebar {
-    display: block;
-    width: 80%;
-  }
-  .navbar-nav{
-    display: none;
-  }
-}
+
 
 @media (max-width: 1400px) {
    .navbar-nav svg{

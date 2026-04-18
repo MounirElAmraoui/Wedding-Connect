@@ -22,6 +22,11 @@
   align-items: center;
   justify-content: space-around;
   padding: 0 var(--spacer-md);
+ 
+}
+
+#home {
+  margin-right:50px;
 }
 
 .bottom-nav-link {
@@ -81,33 +86,3 @@
   }
 }
 
-@media (max-width: 480px) {
-  .bottom-navbar {
-    display: none;
-  }
-  
-  .bottom-navbar-container {
-    justify-content: space-around;
-  }
-  
-  .bottom-nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--spacer-sm);
-    gap: 0;
-    font-size: 20px;
-  }
-  
-  .alink-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  background: var(--primary-gold);
-  font-size: 400px;
-  }
-  .bottom-nav-label {
-    display: none;
-  }
-}

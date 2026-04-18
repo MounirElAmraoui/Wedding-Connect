@@ -74,8 +74,8 @@ const Sidebar = ({ isOpen, onClose }) => {
   const userCard = [
     { label: "Profile", href: "/profil", icon: <User size={16} /> },
     { label: "Settings", href: "/settings", icon: <Settings size={16} /> },
-    { label: "Logout", href: "/logout", icon: <LogOut size={16} /> },
-    { label: "Delete Account", href: "/delete-account", icon: <Trash2 size={16} /> },
+    { label: "Logout", href: "/login", icon: <LogOut size={16} /> },
+    { label: "Delete Account", href: "/register", icon: <Trash2 size={16} /> },
   ];
 
   return (
