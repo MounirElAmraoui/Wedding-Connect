@@ -51,7 +51,7 @@ const Messages = () => {
     },
   ]);
 
-  const [activeConversation, setActiveConversation] = useState(1);
+  const [activeConversation, setActiveConversation] = useState(0);
   const [messages, setMessages] = useState({
     1: [
       { id: 1, sender: "other", text: "Hi! How are you?", time: "10:30 AM" },
